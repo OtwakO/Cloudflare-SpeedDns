@@ -30,4 +30,6 @@ jobs:
             - name: execute py script # run main.py
               run: python update.py
               env:
-                  ENV_SECRET: ${{ secrets.ENV_SECRET }} # pass the secret environment variable to the runner
+                  CF_ZONE_ID: ${{ secrets.CF_ZONE_ID }}
+                  CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+                  CF_EMAIL: ${{ secrets.CF_EMAIL }}
