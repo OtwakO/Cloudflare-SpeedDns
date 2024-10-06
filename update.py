@@ -8,7 +8,6 @@ load_dotenv()
 CF_ZONE_ID = os.getenv("CF_ZONE_ID")
 CF_API_TOKEN = os.getenv("CF_API_TOKEN")
 CF_EMAIL = os.getenv("CF_EMAIL")
-TEST_ENV = os.getenv("TEST_ENV")
 
 
 def update_cloudflare_dns(dns_record_id, ip_address):
