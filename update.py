@@ -27,7 +27,6 @@ def update_cloudflare_dns(dns_record_id, ip_address):
     }
 
     response = requests.request("PATCH", url, json=payload, headers=headers)
-    print(response.text)
     success = response.json()["success"]
     print(f"Cloudflare DNS Record Update Success: {success}")
 
